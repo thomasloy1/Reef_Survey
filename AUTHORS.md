@@ -1,2 +1,7 @@
+# Authors
 
-Jonathan Slack
+## Jonathan Slack
+
+## Tommy Loy
+
+
