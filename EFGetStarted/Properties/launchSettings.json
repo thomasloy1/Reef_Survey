@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EFGetStarted": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\james\\Desktop\\EFGetStarted"
+    }
+  }
+}
