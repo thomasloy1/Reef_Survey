@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\james\\Desktop\\EFGetStarted\\EFGetStarted.csproj": {}
+    "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\EFGetStarted.csproj": {}
   },
   "projects": {
-    "C:\\Users\\james\\Desktop\\EFGetStarted\\EFGetStarted.csproj": {
+    "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\EFGetStarted.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\Desktop\\EFGetStarted\\EFGetStarted.csproj",
+        "projectUniqueName": "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\EFGetStarted.csproj",
         "projectName": "EFGetStarted",
-        "projectPath": "C:\\Users\\james\\Desktop\\EFGetStarted\\EFGetStarted.csproj",
-        "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\Desktop\\EFGetStarted\\obj\\",
+        "projectPath": "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\EFGetStarted.csproj",
+        "packagesPath": "C:\\Users\\tommy\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tommy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
