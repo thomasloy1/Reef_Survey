@@ -25,7 +25,7 @@ namespace EFGetStarted
         public DbSet<Characteristic> FishCharacteristics { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite("Data Source=blogging.db");
+            => options.UseSqlServer("Data Source=blogging.db");
     }
 
     public class Region
