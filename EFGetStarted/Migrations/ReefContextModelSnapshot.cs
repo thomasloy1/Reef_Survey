@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFGetStarted.Migrations
 {
     [DbContext(typeof(ReefContext))]
-    partial class BloggingContextModelSnapshot : ModelSnapshot
+    partial class ReefContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
