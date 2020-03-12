@@ -25,7 +25,7 @@ namespace EFGetStarted
         public DbSet<Characteristic> FishCharacteristics { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlServer("Data Source=blogging.db");
+            => options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=FishDump;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
     }
 
     public class Region
