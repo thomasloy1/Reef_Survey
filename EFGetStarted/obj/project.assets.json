@@ -5292,9 +5292,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\EFGetStarted.csproj",
-      "projectName": "EFGetStarted",
-      "projectPath": "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\EFGetStarted.csproj",
+      "projectUniqueName": "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\DanimalReefSurvey.csproj",
+      "projectName": "DanimalReefSurvey",
+      "projectPath": "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\DanimalReefSurvey.csproj",
       "packagesPath": "C:\\Users\\tommy\\.nuget\\packages\\",
       "outputPath": "D:\\Documents\\Microsoft Class\\Reef_Survey\\EFGetStarted\\obj\\",
       "projectStyle": "PackageReference",

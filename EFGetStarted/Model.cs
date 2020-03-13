@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace EFGetStarted
+namespace DanimalReefSurvey
 {
     public class ReefContext : DbContext
     {

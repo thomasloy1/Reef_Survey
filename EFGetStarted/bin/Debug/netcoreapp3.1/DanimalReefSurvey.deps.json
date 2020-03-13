@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "EFGetStarted/1.0.0": {
+      "DanimalReefSurvey/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "3.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.2"
         },
         "runtime": {
-          "EFGetStarted.dll": {}
+          "DanimalReefSurvey.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -1013,7 +1013,7 @@
     }
   },
   "libraries": {
-    "EFGetStarted/1.0.0": {
+    "DanimalReefSurvey/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

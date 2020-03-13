@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace EFGetStarted.Migrations
+namespace DanimalReefSurvey.Migrations
 {
     public partial class InitialCreate : Migration
     {
