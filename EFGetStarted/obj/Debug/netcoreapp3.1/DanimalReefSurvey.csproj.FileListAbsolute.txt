@@ -62,3 +62,4 @@ D:\Documents\Microsoft Class\Reef_Survey\EFGetStarted\obj\Debug\netcoreapp3.1\Da
 D:\Documents\Microsoft Class\Reef_Survey\EFGetStarted\obj\Debug\netcoreapp3.1\DanimalReefSurvey.csproj.CopyComplete
 D:\Documents\Microsoft Class\Reef_Survey\EFGetStarted\obj\Debug\netcoreapp3.1\DanimalReefSurvey.dll
 D:\Documents\Microsoft Class\Reef_Survey\EFGetStarted\obj\Debug\netcoreapp3.1\DanimalReefSurvey.pdb
+D:\Documents\Microsoft Class\Reef_Survey\EFGetStarted\obj\Debug\netcoreapp3.1\DanimalReefSurvey.csprojAssemblyReference.cache

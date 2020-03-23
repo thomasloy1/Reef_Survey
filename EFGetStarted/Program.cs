@@ -21,6 +21,12 @@ namespace DanimalReefSurvey
 
                         Console.WriteLine(result);
 
+                        // 1. Create objects for headers 
+
+                        // region NewRegion = new region;
+
+                        // newregion = result [i]
+
                     }
                 }
             }
