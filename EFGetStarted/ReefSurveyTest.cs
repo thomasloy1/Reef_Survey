@@ -24,7 +24,6 @@ namespace DanimalReefSurvey
 			foreach (var s in result)
 			{
 				s.TrimEnd();
-				Console.Write($"{s},");
 			}
 			return result;
 

@@ -18,7 +18,7 @@ namespace DanimalReefSurvey.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("EFGetStarted.Batch", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Batch", b =>
                 {
                     b.Property<int>("BatchId")
                         .ValueGeneratedOnAdd()
@@ -38,7 +38,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("Batchs");
                 });
 
-            modelBuilder.Entity("EFGetStarted.Characteristic", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Characteristic", b =>
                 {
                     b.Property<int>("CharacteristicId")
                         .ValueGeneratedOnAdd()
@@ -67,7 +67,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("FishCharacteristics");
                 });
 
-            modelBuilder.Entity("EFGetStarted.Fish", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Fish", b =>
                 {
                     b.Property<int>("FishId")
                         .ValueGeneratedOnAdd()
@@ -84,7 +84,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("Fishes");
                 });
 
-            modelBuilder.Entity("EFGetStarted.Index", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Index", b =>
                 {
                     b.Property<int>("IndexId")
                         .ValueGeneratedOnAdd()
@@ -104,7 +104,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("Indexes");
                 });
 
-            modelBuilder.Entity("EFGetStarted.Location", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Location", b =>
                 {
                     b.Property<int>("LocationId")
                         .ValueGeneratedOnAdd()
@@ -127,7 +127,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("Locations");
                 });
 
-            modelBuilder.Entity("EFGetStarted.Name", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Name", b =>
                 {
                     b.Property<int>("NameId")
                         .ValueGeneratedOnAdd()
@@ -153,7 +153,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("FishNames");
                 });
 
-            modelBuilder.Entity("EFGetStarted.Region", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Region", b =>
                 {
                     b.Property<int>("RegionId")
                         .ValueGeneratedOnAdd()
@@ -168,7 +168,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("Regions");
                 });
 
-            modelBuilder.Entity("EFGetStarted.StudyArea", b =>
+            modelBuilder.Entity("DanimalReefSurvey.StudyArea", b =>
                 {
                     b.Property<int>("StudyAreaId")
                         .ValueGeneratedOnAdd()
@@ -188,7 +188,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("StudyAreas");
                 });
 
-            modelBuilder.Entity("EFGetStarted.SubRegion", b =>
+            modelBuilder.Entity("DanimalReefSurvey.SubRegion", b =>
                 {
                     b.Property<int>("SubRegionId")
                         .ValueGeneratedOnAdd()
@@ -208,7 +208,7 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("SubRegions");
                 });
 
-            modelBuilder.Entity("EFGetStarted.Survey", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Survey", b =>
                 {
                     b.Property<int>("SurveyId")
                         .ValueGeneratedOnAdd()
@@ -228,81 +228,81 @@ namespace DanimalReefSurvey.Migrations
                     b.ToTable("Surveys");
                 });
 
-            modelBuilder.Entity("EFGetStarted.Batch", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Batch", b =>
                 {
-                    b.HasOne("EFGetStarted.Survey", "Survey")
+                    b.HasOne("DanimalReefSurvey.Survey", "Survey")
                         .WithMany()
                         .HasForeignKey("SurveyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EFGetStarted.Characteristic", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Characteristic", b =>
                 {
-                    b.HasOne("EFGetStarted.Name", "Name")
+                    b.HasOne("DanimalReefSurvey.Name", "Name")
                         .WithMany()
                         .HasForeignKey("NameId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EFGetStarted.Fish", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Fish", b =>
                 {
-                    b.HasOne("EFGetStarted.Survey", "Survey")
+                    b.HasOne("DanimalReefSurvey.Survey", "Survey")
                         .WithMany()
                         .HasForeignKey("SurveyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EFGetStarted.Index", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Index", b =>
                 {
-                    b.HasOne("EFGetStarted.Batch", "Batch")
+                    b.HasOne("DanimalReefSurvey.Batch", "Batch")
                         .WithMany()
                         .HasForeignKey("BatchId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EFGetStarted.Location", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Location", b =>
                 {
-                    b.HasOne("EFGetStarted.StudyArea", "StudyArea")
+                    b.HasOne("DanimalReefSurvey.StudyArea", "StudyArea")
                         .WithMany()
                         .HasForeignKey("StudyAreaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EFGetStarted.Name", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Name", b =>
                 {
-                    b.HasOne("EFGetStarted.Fish", "Fish")
+                    b.HasOne("DanimalReefSurvey.Fish", "Fish")
                         .WithMany()
                         .HasForeignKey("FishId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EFGetStarted.StudyArea", b =>
+            modelBuilder.Entity("DanimalReefSurvey.StudyArea", b =>
                 {
-                    b.HasOne("EFGetStarted.SubRegion", "SubRegion")
+                    b.HasOne("DanimalReefSurvey.SubRegion", "SubRegion")
                         .WithMany()
                         .HasForeignKey("SubRegionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EFGetStarted.SubRegion", b =>
+            modelBuilder.Entity("DanimalReefSurvey.SubRegion", b =>
                 {
-                    b.HasOne("EFGetStarted.Region", "Region")
+                    b.HasOne("DanimalReefSurvey.Region", "Region")
                         .WithMany()
                         .HasForeignKey("RegionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("EFGetStarted.Survey", b =>
+            modelBuilder.Entity("DanimalReefSurvey.Survey", b =>
                 {
-                    b.HasOne("EFGetStarted.Region", "Region")
+                    b.HasOne("DanimalReefSurvey.Region", "Region")
                         .WithMany()
                         .HasForeignKey("RegionId")
                         .OnDelete(DeleteBehavior.Cascade)
